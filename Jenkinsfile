@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'NO_COLOR=1 npm test'
+                sh 'export NO_COLOR=1 && npm test'
             }
         }
     }
